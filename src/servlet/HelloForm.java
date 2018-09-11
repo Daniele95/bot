@@ -44,5 +44,7 @@ public class HelloForm extends HttpServlet {
 	            "</body> "+
 	         "</html>"
 	      );
+	      request.getRequestDispatcher("/WEB-INF/index.jsp").forward(request, response);
+
 	   }
 }

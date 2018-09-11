@@ -135,15 +135,31 @@ public class Bot {
 	    	}	    	
 	}
 	
-	/*
+	
     public static void main(final String[] args) {
     	
     //	log.setLevel(Level.OFF);
       
-    //	waitUntil(7,16,01);
-    	new Bot("Aula 114",new GregorianCalendar(2018,6,13,14,00),16,00);
-        
+    	
+    	
+    	int oraInizio = 14;
+    	int minutoInizio = 0;
+    	
+    	int oraFine = 16;
+    	int minutoFine = 0;
+    	
+    	while (true) {
+    	
+	    	new Bot("Aula 112",new GregorianCalendar(2018,9,12,oraInizio,minutoInizio),oraFine,minutoFine);
+	        
+	
+	    	if (minutoInizio >=30) oraInizio ++;
+	    	else minutoInizio += 30;
+	    	
+	    	waitUntil(12,oraInizio,minutoInizio);
+	    	
+    	}
     	
     }
-*/
+
 }
